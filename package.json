@@ -1,0 +1,31 @@
+{
+  "name": "setup-jest-math",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CodeIsaMystic/setup-jest-math.git",
+  "author": "Julien Orjollet <oj.professionnel@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "collectCoverageFrom": [
+      "*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 50,
+        "branches": 50,
+        "functions": 50,
+        "lines": 100
+      }
+    }
+  }
+}
